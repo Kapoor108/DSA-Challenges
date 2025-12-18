@@ -47,3 +47,18 @@
 #     print("Books found at index:", index)
 # else:
 #     print("Books not found")
+
+
+def linear_search(arr, target):
+    for i in range(len(arr)):
+        if arr[i] == target: 
+            return i 
+
+        return -1    
+
+index = linear_search(arr, target)
+
+if index != -1:
+    print("books found at index:", index)
+else:
+    print("Books not found")    
